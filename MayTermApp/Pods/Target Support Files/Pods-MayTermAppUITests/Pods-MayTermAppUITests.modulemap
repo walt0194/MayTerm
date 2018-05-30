@@ -1,0 +1,6 @@
+framework module Pods_MayTermAppUITests {
+  umbrella header "Pods-MayTermAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

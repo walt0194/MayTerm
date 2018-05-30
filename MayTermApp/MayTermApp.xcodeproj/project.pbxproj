@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099E824A87B28C1C0CFCC6E2 /* Pods_MayTermAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95B0FE00ACEE540AC2F08489 /* Pods_MayTermAppUITests.framework */; };
+		275B0093032F744B252FD676 /* Pods_MayTermApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD267848925D0A02B07505C /* Pods_MayTermApp.framework */; };
 		E523FEE420BEFCE80022D6CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E523FEE320BEFCE80022D6CA /* AppDelegate.swift */; };
 		E523FEE620BEFCE80022D6CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E523FEE520BEFCE80022D6CA /* ViewController.swift */; };
 		E523FEE920BEFCE80022D6CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E523FEE720BEFCE80022D6CA /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		E523FEEE20BEFCE90022D6CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E523FEEC20BEFCE90022D6CA /* LaunchScreen.storyboard */; };
 		E523FEF920BEFCE90022D6CA /* MayTermAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E523FEF820BEFCE90022D6CA /* MayTermAppTests.swift */; };
 		E523FF0420BEFCEA0022D6CA /* MayTermAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E523FF0320BEFCEA0022D6CA /* MayTermAppUITests.swift */; };
+		F6B19D7AFCAA32FF24A9065A /* Pods_MayTermAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 471941D38CCC2415915AA174 /* Pods_MayTermAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DD267848925D0A02B07505C /* Pods_MayTermApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTermApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4145FE1D33A1D051C993E33E /* Pods-MayTermAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTermAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MayTermAppTests/Pods-MayTermAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		471941D38CCC2415915AA174 /* Pods_MayTermAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTermAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63115A5DA1DF25F611573FC1 /* Pods-MayTermApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTermApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MayTermApp/Pods-MayTermApp.debug.xcconfig"; sourceTree = "<group>"; };
+		63719227A0379184838A898D /* Pods-MayTermAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTermAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MayTermAppUITests/Pods-MayTermAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		76C897F64013FA0168964254 /* Pods-MayTermAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTermAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MayTermAppTests/Pods-MayTermAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		910E02B55D8FF4D404863A12 /* Pods-MayTermApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTermApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MayTermApp/Pods-MayTermApp.release.xcconfig"; sourceTree = "<group>"; };
+		95B0FE00ACEE540AC2F08489 /* Pods_MayTermAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MayTermAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E523FEE020BEFCE80022D6CA /* MayTermApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MayTermApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E523FEE320BEFCE80022D6CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E523FEE520BEFCE80022D6CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,7 @@
 		E523FEFF20BEFCEA0022D6CA /* MayTermAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayTermAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E523FF0320BEFCEA0022D6CA /* MayTermAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayTermAppUITests.swift; sourceTree = "<group>"; };
 		E523FF0520BEFCEA0022D6CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F439698684A624BFD2748204 /* Pods-MayTermAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MayTermAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MayTermAppUITests/Pods-MayTermAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				275B0093032F744B252FD676 /* Pods_MayTermApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B19D7AFCAA32FF24A9065A /* Pods_MayTermAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099E824A87B28C1C0CFCC6E2 /* Pods_MayTermAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40D3095F38D1483B5E90CD44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DD267848925D0A02B07505C /* Pods_MayTermApp.framework */,
+				471941D38CCC2415915AA174 /* Pods_MayTermAppTests.framework */,
+				95B0FE00ACEE540AC2F08489 /* Pods_MayTermAppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6526AA4153B39F27C5388E4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63115A5DA1DF25F611573FC1 /* Pods-MayTermApp.debug.xcconfig */,
+				910E02B55D8FF4D404863A12 /* Pods-MayTermApp.release.xcconfig */,
+				76C897F64013FA0168964254 /* Pods-MayTermAppTests.debug.xcconfig */,
+				4145FE1D33A1D051C993E33E /* Pods-MayTermAppTests.release.xcconfig */,
+				63719227A0379184838A898D /* Pods-MayTermAppUITests.debug.xcconfig */,
+				F439698684A624BFD2748204 /* Pods-MayTermAppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E523FED720BEFCE80022D6CA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				E523FEF720BEFCE90022D6CA /* MayTermAppTests */,
 				E523FF0220BEFCEA0022D6CA /* MayTermAppUITests */,
 				E523FEE120BEFCE80022D6CA /* Products */,
+				6526AA4153B39F27C5388E4F /* Pods */,
+				40D3095F38D1483B5E90CD44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E523FF0820BEFCEA0022D6CA /* Build configuration list for PBXNativeTarget "MayTermApp" */;
 			buildPhases = (
+				3850671ED07C388342BDC965 /* [CP] Check Pods Manifest.lock */,
 				E523FEDC20BEFCE80022D6CA /* Sources */,
 				E523FEDD20BEFCE80022D6CA /* Frameworks */,
 				E523FEDE20BEFCE80022D6CA /* Resources */,
+				26BB8B6949A13E91AF9A8972 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E523FF0B20BEFCEA0022D6CA /* Build configuration list for PBXNativeTarget "MayTermAppTests" */;
 			buildPhases = (
+				B0A54FAB630DD8A7A916A64A /* [CP] Check Pods Manifest.lock */,
 				E523FEF020BEFCE90022D6CA /* Sources */,
 				E523FEF120BEFCE90022D6CA /* Frameworks */,
 				E523FEF220BEFCE90022D6CA /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E523FF0E20BEFCEA0022D6CA /* Build configuration list for PBXNativeTarget "MayTermAppUITests" */;
 			buildPhases = (
+				380F1AE9E665586774C72F14 /* [CP] Check Pods Manifest.lock */,
 				E523FEFB20BEFCEA0022D6CA /* Sources */,
 				E523FEFC20BEFCEA0022D6CA /* Frameworks */,
 				E523FEFD20BEFCEA0022D6CA /* Resources */,
@@ -250,6 +294,81 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26BB8B6949A13E91AF9A8972 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MayTermApp/Pods-MayTermApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MayTermApp/Pods-MayTermApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		380F1AE9E665586774C72F14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayTermAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3850671ED07C388342BDC965 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayTermApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0A54FAB630DD8A7A916A64A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MayTermAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E523FEDC20BEFCE80022D6CA /* Sources */ = {
@@ -428,6 +547,7 @@
 		};
 		E523FF0920BEFCEA0022D6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63115A5DA1DF25F611573FC1 /* Pods-MayTermApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +566,7 @@
 		};
 		E523FF0A20BEFCEA0022D6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 910E02B55D8FF4D404863A12 /* Pods-MayTermApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +585,7 @@
 		};
 		E523FF0C20BEFCEA0022D6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C897F64013FA0168964254 /* Pods-MayTermAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +607,7 @@
 		};
 		E523FF0D20BEFCEA0022D6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4145FE1D33A1D051C993E33E /* Pods-MayTermAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +629,7 @@
 		};
 		E523FF0F20BEFCEA0022D6CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63719227A0379184838A898D /* Pods-MayTermAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +650,7 @@
 		};
 		E523FF1020BEFCEA0022D6CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F439698684A624BFD2748204 /* Pods-MayTermAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
