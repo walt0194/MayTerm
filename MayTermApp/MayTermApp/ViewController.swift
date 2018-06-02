@@ -11,20 +11,25 @@ import SwiftSocket
 
 class ViewController: UIViewController {
     
-    let client = TCPClient(address: "73.94.99.15", port: 6394)
+    let host = "10.0.0.34"
+    let port = 6374
+    var client: TCPClient?
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var field: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        client = TCPClient(address: host, port: Int32(port))
         field.delegate = self
-        
-        switch client.connect(timeout: 10) {
+        guard let client = client else { return }
+        print("Pressed")
+        switch client.connect(timeout: 1) {
         case .success:
-            label.text = "connected"
+            print("Connected")
+            label.text = "Connected"
         case .failure(let error):
+            print("Failed")
             label.text = String(describing: error)
         }
     }
@@ -35,8 +40,18 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnPress(_ sender: Any) {
-        client.send(string: field.text!)
         label.text = field.text
+        sendMessage(string: field.text!, using: client!)
+    }
+    
+    private func sendMessage(string: String, using client: TCPClient) -> String? {
+        switch client.send(string: "\(string)\n") {
+        case .success:
+            return "Success"
+        case .failure(let error):
+            label.text = String(describing: error)
+            return nil
+        }
     }
 }
 
