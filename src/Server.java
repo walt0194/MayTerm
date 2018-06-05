@@ -5,7 +5,7 @@ public class Server {
 
 	public static void main(String [] args) throws IOException{
 		
-		int port = 6374;
+		int port = 3141;
 		while(true) {
 			
 			try(	
@@ -17,6 +17,8 @@ public class Server {
 			{
 				System.out.println("Connection Established");
 				String message = "";
+				
+				out.println("ON");
 				
 				while(message != null) {
 					message = in.readLine();
