@@ -16,21 +16,22 @@ class ViewController: UIViewController {
     var client: TCPClient?
 
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var field: UITextField!
+    @IBOutlet weak var lightBG: UIView!
+    @IBOutlet weak var darkBG: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        configureTapGesture()
+        //configureTapGesture()
         
         client = TCPClient(address: host, port: Int32(port))
-        field.delegate = self
+        //field.delegate = self
         guard let client = client else { return }
         print("Pressed")
         switch client.connect(timeout: 1) {
         case .success:
             print("Connected")
-            label.text = "Connected"
+            label.text = "Connected: \(String(describing: client.read(1024*10)))"
         case .failure(let error):
             print("Failed")
             label.text = String(describing: error)
@@ -43,18 +44,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnPress(_ sender: Any) {
-        label.text = field.text
-        sendMessage(string: "Pressed", using: client!)
+        label.text = "On"
+        sendMessage(string: "On", using: client!)
+        lightBG.isHidden = false
+        darkBG.isHidden = true
     }
     
+    @IBAction func offBtnPress(_ sender: Any) {
+        label.text = "Off"
+        sendMessage(string: "Off", using: client!)
+        lightBG.isHidden = true
+        darkBG.isHidden = false
+    }
+    
+    /*
     private func configureTapGesture() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTap))
         view.addGestureRecognizer(tapGesture)
     }
+ 
     
     @objc func handleTap() {
         view.endEditing(true)
     }
+ */
     
     private func sendMessage(string: String, using client: TCPClient) -> String? {
         switch client.send(string: "\(string)\n") {
@@ -66,7 +79,7 @@ class ViewController: UIViewController {
         }
     }
 }
-
+/*
 extension ViewController: UITextFieldDelegate{
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -76,4 +89,4 @@ extension ViewController: UITextFieldDelegate{
         return true
     }
 }
-
+*/
