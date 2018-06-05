@@ -12,7 +12,7 @@ import SwiftSocket
 class ViewController: UIViewController {
     
     let host = "73.94.99.15"
-    let port = 6374
+    let port = 3141
     var client: TCPClient?
 
     @IBOutlet weak var label: UILabel!
