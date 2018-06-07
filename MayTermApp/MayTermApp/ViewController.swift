@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         switch client.connect(timeout: 1) {
         case .success:
             print("Connected")
-            label.text = "Connected: \(String(describing: client.read(1024*10)))"
+            label.text = "Connected: Lights are \(readData(using: client))"
         case .failure(let error):
             print("Failed")
             label.text = String(describing: error)
@@ -48,6 +48,7 @@ class ViewController: UIViewController {
         sendMessage(string: "On", using: client!)
         lightBG.isHidden = false
         darkBG.isHidden = true
+        label.textColor = UIColor.black
     }
     
     @IBAction func offBtnPress(_ sender: Any) {
@@ -55,20 +56,22 @@ class ViewController: UIViewController {
         sendMessage(string: "Off", using: client!)
         lightBG.isHidden = true
         darkBG.isHidden = false
+        label.textColor = UIColor.white
     }
     
-    /*
-    private func configureTapGesture() {
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTap))
-        view.addGestureRecognizer(tapGesture)
+    private func readData(using client: TCPClient) -> String {
+        var bytes = client.read(1024)
+        while(bytes == nil){
+            bytes = client.read(1024)
+        }
+        
+        if let string = String(bytes: bytes!, encoding: .utf8) {
+            let index = string.index(string.endIndex, offsetBy: -1)
+            let mySubstring = string.prefix(upTo: index)
+            return String(mySubstring)
+        } else {return ""}
     }
- 
-    
-    @objc func handleTap() {
-        view.endEditing(true)
-    }
- */
-    
+
     private func sendMessage(string: String, using client: TCPClient) -> String? {
         switch client.send(string: "\(string)\n") {
         case .success:
@@ -78,6 +81,18 @@ class ViewController: UIViewController {
             return nil
         }
     }
+    /*
+     private func configureTapGesture() {
+     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ViewController.handleTap))
+     view.addGestureRecognizer(tapGesture)
+     }
+     
+     
+     @objc func handleTap() {
+     view.endEditing(true)
+     }
+     */
+    
 }
 /*
 extension ViewController: UITextFieldDelegate{
